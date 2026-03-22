@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) [![Stars](https://img.shields.io/github/stars/xanderyuan/Awesome-Latent-Visual-Reasoning?style=social)](https://github.com/xanderyuan/Awesome-Latent-Visual-Reasoning) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
+[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) [![Stars](https://img.shields.io/github/stars/xandery-geek/Awesome-Latent-Visual-Reasoning?style=social)](https://github.com/xandery-geek/Awesome-Latent-Visual-Reasoning) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
 A curated collection of papers on **Latent Visual Reasoning** — enabling Multimodal Large Language Models (MLLMs) to reason in continuous latent/visual space rather than discrete text token space.
 
@@ -159,8 +159,8 @@ Contributions are welcome! Please feel free to submit a PR if you find a relevan
 
 ## ⭐ Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=xanderyuan/Awesome-Latent-Visual-Reasoning&type=Date)](https://star-history.com/#xanderyuan/Awesome-Latent-Visual-Reasoning&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=xandery-geek/Awesome-Latent-Visual-Reasoning&type=Date)](https://star-history.com/#xandery-geek/Awesome-Latent-Visual-Reasoning&Date)
 
 ---
 
-*This repository is maintained by [Xander Yuan](https://github.com/xanderyuan). Licensed under [MIT](https://opensource.org/licenses/MIT).*
+*This repository is maintained by [Xander Yuan](https://github.com/xandery-geek). Licensed under [MIT](https://opensource.org/licenses/MIT).*
