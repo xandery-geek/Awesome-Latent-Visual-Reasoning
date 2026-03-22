@@ -32,12 +32,12 @@ Papers that enable MLLMs to generate or manipulate visual embeddings/latents dur
 | Date | Paper | Abbreviation | Venue | Key Idea |
 |------|-------|:---:|:---:|----------|
 | 2025-01 | [Efficient Reasoning with Hidden Thinking](https://arxiv.org/abs/2501.19201) | Heima | — | Encode each CoT step into a single thinking token; token count reduced to 6% |
-| 2025-09 | [Multimodal Chain of Continuous Thought](https://arxiv.org/abs/2508.12587) | MCOUT | — | Iterative continuous latent thought with multimodal attention for VLMs |
-| 2025-10 | [Latent Visual Reasoning](https://arxiv.org/abs/2509.24251) | LVR | — | Auto-regressive visual token reconstruction interleaved with text generation |
+| 2025-09 | [Multimodal Chain of Continuous Thought](https://arxiv.org/abs/2508.12587) | MCOUT | NeurIPS 2025 Workshop | Iterative continuous latent thought with multimodal attention for VLMs |
+| 2025-10 | [Latent Visual Reasoning](https://arxiv.org/abs/2509.24251) | LVR | ICLR 2026 | Auto-regressive visual token reconstruction interleaved with text generation |
 | 2025-10 | [Reasoning in the Dark: Interleaved Vision-Text Reasoning in Latent Space](https://arxiv.org/abs/2510.12603) | IVT-LR | — | Unified latent text + latent vision tokens per reasoning step |
-| 2025-10 | [Latent Chain-of-Thought for Visual Reasoning](https://arxiv.org/abs/2510.23925) | LaCoT | — | Bayesian formulation via amortized variational inference and GFlowNet |
+| 2025-10 | [Latent Chain-of-Thought for Visual Reasoning](https://arxiv.org/abs/2510.23925) | LaCoT | NeurIPS 2025 | Bayesian formulation via amortized variational inference and GFlowNet |
 | 2025-11 | [Chain-of-Visual-Thought](https://arxiv.org/abs/2511.19418) | CoVT | — | ~20 continuous visual tokens distilled from segmentation, depth, edge experts |
-| 2025-11 | [Monet: Reasoning in Latent Visual Space](https://arxiv.org/abs/2511.21395) | Monet | — | 3-stage distillation + VLPO for latent visual reasoning |
+| 2025-11 | [Monet: Reasoning in Latent Visual Space](https://arxiv.org/abs/2511.21395) | Monet | CVPR 2026 | 3-stage distillation + VLPO for latent visual reasoning |
 | 2025-12 | [Sketch-in-Latents](https://arxiv.org/abs/2512.16584) | SkiLa | — | Multi-step interleaved text + visual sketch tokens |
 | 2025-12 | [Latent Implicit Visual Reasoning](https://arxiv.org/abs/2512.21218) | LIVR | — | Task-agnostic: no explicit supervision via visual bottlenecking |
 | 2026-02 | [Vision-aligned Latent Reasoning](https://arxiv.org/abs/2602.04476) | VaLR | — | Dynamic vision-aligned latents per CoT step with REPA |
@@ -70,7 +70,7 @@ Papers applying latent reasoning to specific domains.
 
 | Date | Paper | Abbreviation | Venue | Domain | Key Idea |
 |------|-------|:---:|:---:|:---:|----------|
-| 2025-06 | [MINT-CoT: Mathematical Interleaved Tokens](https://arxiv.org/abs/2506.05331) | MINT-CoT | — | Math | Interleave fine-grained visual tokens for mathematical reasoning |
+| 2025-06 | [MINT-CoT: Mathematical Interleaved Tokens](https://arxiv.org/abs/2506.05331) | MINT-CoT | NeurIPS 2025 | Math | Interleave fine-grained visual tokens for mathematical reasoning |
 | 2026-03 | [LatentGeo: Learnable Auxiliary Constructions](https://arxiv.org/abs/2603.12166) | LatentGeo | — | Geometry | Latent auxiliary line construction for geometric reasoning |
 
 ### 🔹 5. Related: Latent Reasoning for LLMs (Text-only)
