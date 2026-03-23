@@ -51,7 +51,7 @@ A growing paradigm: render text CoT as images, then use visual features as super
 | Date | Paper | Abbreviation | Venue | Key Idea |
 |------|-------|:---:|:---:|----------|
 | 2026-01 | [Render-of-Thought](https://arxiv.org/abs/2601.14750) | RoT | — | Render textual CoT as images for visual latent reasoning |
-| 2026-01 | [ImgCoT: Compressing Long CoT into Compact Visual Tokens](https://arxiv.org/abs/2601.22730) | ImgCoT | ICML 2026 | Visual CoT compression via TiTok; 8 tokens replace full CoT |
+| 2026-01 | [ImgCoT: Compressing Long CoT into Compact Visual Tokens](https://arxiv.org/abs/2601.22730) | ImgCoT | — | Visual CoT compression via TiTok; 8 tokens replace full CoT |
 | 2026-01 | [ReGuLaR: Variational Latent Reasoning](https://arxiv.org/abs/2601.23184) | ReGuLaR | — | VAE framework for latent reasoning with rendered CoT as prior |
 | 2026-02 | [OneLatent: Single-Token Compression](https://arxiv.org/abs/2602.13738) | OneLatent | — | Extreme compression to 1 token with DeepSeek-OCR supervision |
 
@@ -84,7 +84,7 @@ Foundational and closely related works on latent reasoning in the text-only sett
 | 2024-05 | [From Explicit to Implicit CoT](https://arxiv.org/abs/2405.14838) | ICoT-SI | — | Step-by-step internalization of explicit CoT |
 | 2024-12 | [Coconut: Reasoning in Continuous Latent Space](https://arxiv.org/abs/2412.06769) | Coconut | COLM 2025 | Foundational work on continuous latent reasoning |
 | 2024-12 | [Compressed Chain of Thought](https://arxiv.org/abs/2412.13171) | CCoT | — | Dense representations for CoT compression |
-| 2025-02 | [SoftCoT: Soft Chain-of-Thought](https://arxiv.org/abs/2502.12134) | SoftCoT | — | Soft thinking in continuous concept space |
+| 2025-02 | [SoftCoT: Soft Chain-of-Thought](https://arxiv.org/abs/2502.12134) | SoftCoT | ACL 2025 | Soft thinking in continuous concept space |
 | 2025-05 | [SoftCoT++: Test-Time Scaling](https://arxiv.org/abs/2505.11484) | SoftCoT++ | — | Diverse exploration via perturbed latent thoughts |
 | 2025-05 | [Think Silently: Dynamic Latent Compression](https://arxiv.org/abs/2505.16552) | CoLaR | NeurIPS 2025 | Dynamic CoT compression into latent tokens |
 | 2025-10 | [Latent Reasoning as Vocabulary-Space Superposition](https://arxiv.org/abs/2510.15522) | — | — | Vocabulary-space superposition for latent reasoning |
