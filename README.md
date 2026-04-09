@@ -6,7 +6,7 @@
 
 A curated collection of papers on **Latent Visual Reasoning** — enabling Multimodal Large Language Models (MLLMs) to reason in continuous latent/visual space rather than discrete text token space.
 
-**Last updated:** March 2026 | **Papers:** 21
+**Last updated:** April 2026 | **Papers:** 22
 
 </div>
 
@@ -98,7 +98,15 @@ Works that critically examine whether latent tokens genuinely contribute to reas
 | 2026-02 | [Imagination Helps, But Not Yet in Latent Space](https://arxiv.org/abs/2602.22766) | CapImagine | — | Causal mediation analysis reveals latent tokens may be "placeholders" |
 | 2026-02 | [CrystaL: Spontaneous Emergence of Visual Latents](https://arxiv.org/abs/2602.20980) | CrystaL | — | Dual-path alignment for crystallizing visual latents |
 
-### 🔹 7. Related: Latent Space for Document Embedding
+### 🔹 7. Latent Reasoning for Retrieval & Embedding
+
+Applying latent reasoning to multimodal retrieval and embedding tasks.
+
+| Date | Paper | Abbreviation | Venue | Key Idea |
+|------|-------|:---:|:---:|----------|
+| 2026-04 | [PLUME: Latent Reasoning Based Universal Multimodal Embedding](https://arxiv.org/abs/2604.02073) | PLUME | — | Implicit CoT reasoning before extracting universal multimodal embeddings for retrieval |
+
+### 🔹 8. Related: Latent Space for Document Embedding
 
 | Date | Paper | Abbreviation | Venue | Key Idea |
 |------|-------|:---:|:---:|----------|
