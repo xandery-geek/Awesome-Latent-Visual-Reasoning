@@ -6,7 +6,7 @@
 
 A curated collection of papers on **Latent Visual Reasoning** — enabling Multimodal Large Language Models (MLLMs) to reason in continuous latent/visual space rather than discrete text token space.
 
-**Last updated:** April 2026 | **Papers:** 22
+**Last updated:** April 2026 | **Papers:** 23
 
 </div>
 
@@ -43,6 +43,7 @@ Papers that enable MLLMs to generate or manipulate visual embeddings/latents dur
 | 2026-02 | [Vision-aligned Latent Reasoning](https://arxiv.org/abs/2602.04476) | VaLR | — | Dynamic vision-aligned latents per CoT step with REPA |
 | 2026-02 | [SwimBird: Switchable Reasoning Mode](https://arxiv.org/abs/2602.06040) | SwimBird | — | Adaptive mode switching: text / visual / interleaved |
 | 2026-02 | [HIVE: Multimodal Latent Reasoning via Hierarchical Visual Cues](https://arxiv.org/abs/2602.05359) | HIVE | — | Loop Transformer with coarse-to-fine hierarchical visual injection |
+| 2026-04 | [Hybrid Latent Reasoning with Decoupled Policy Optimization](https://arxiv.org/abs/2604.22096) | HLPR | — | Hybrid CoT with adaptive policy optimization for MLLMs |
 
 ### 🔹 2. Rendered CoT → Visual Latent Reasoning
 
@@ -130,6 +131,7 @@ Applying latent reasoning to multimodal retrieval and embedding tasks.
 | VaLR | K/step | Visual encoders | Curriculum + REPA | Qwen2.5-VL | VSI +19.9% |
 | SwimBird | Adaptive | Multi-mode | 3-mode SFT | Qwen2.5-VL | HR-Bench 79.0 |
 | HIVE | Adaptive | Multi-modal | Loop Transformer SFT | Huginn 3.5B | ScienceQA 91.6% |
+| HLPR | Decoupled | Hybrid CoT + Vision | Policy optimization | — |
 | ImgCoT | **8** | Rendered CoT | TiTok + LLM SFT | Qwen2.5 | ≈ Full-CoT |
 | ReGuLaR | ~3 steps | Rendered CoT | VAE (ELBO + KL) | LLaMA 3.2 | Avg 45.6% |
 | OneLatent | **1** | Rendered CoT | 3-stage curriculum | DeepSeek-OCR | 11× compress, -2.21% |
@@ -140,7 +142,7 @@ Applying latent reasoning to multimodal retrieval and embedding tasks.
 
 1. **From Text CoT → Visual CoT → Latent Space Reasoning** — Progressive transition to implicit reasoning
 2. **Rendered CoT as Visual Supervision** — ImgCoT, ReGuLaR, OneLatent share this emerging paradigm
-3. **Hybrid Auto-regressive Generation** — Unified discrete text + continuous latent prediction
+3. **Hybrid Auto-regressive Generation & Decoupled Optimization** — Unified discrete text + continuous latent prediction with adaptive policies
 4. **Multi-stage Training** — Progressive SFT + RL is the standard recipe
 5. **Adaptive Mode Switching** — Models learn to choose text/visual/mixed reasoning per query
 6. **Causal Scrutiny** — CapImagine challenges whether latent tokens truly contribute
