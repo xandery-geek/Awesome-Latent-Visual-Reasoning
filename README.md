@@ -6,7 +6,7 @@
 
 A curated collection of papers on **Latent Visual Reasoning** — enabling Multimodal Large Language Models (MLLMs) to reason in continuous latent/visual space rather than discrete text token space.
 
-**Last updated:** April 2026 | **Papers:** 23
+**Last updated:** April 2026 | **Papers:** 24
 
 </div>
 
@@ -43,6 +43,7 @@ Papers that enable MLLMs to generate or manipulate visual embeddings/latents dur
 | 2026-02 | [Vision-aligned Latent Reasoning](https://arxiv.org/abs/2602.04476) | VaLR | — | Dynamic vision-aligned latents per CoT step with REPA |
 | 2026-02 | [SwimBird: Switchable Reasoning Mode](https://arxiv.org/abs/2602.06040) | SwimBird | — | Adaptive mode switching: text / visual / interleaved |
 | 2026-02 | [HIVE: Multimodal Latent Reasoning via Hierarchical Visual Cues](https://arxiv.org/abs/2602.05359) | HIVE | — | Loop Transformer with coarse-to-fine hierarchical visual injection |
+| 2026-04 | [OneVL: One-Step Latent Reasoning and Planning with Vision-Language Explanation](https://arxiv.org/abs/2604.22096) | OneVL | — | One-step latent reasoning with VL explanation for VLA |
 | 2026-04 | [Hybrid Latent Reasoning with Decoupled Policy Optimization](https://arxiv.org/abs/2604.22096) | HLPR | — | Hybrid CoT with adaptive policy optimization for MLLMs |
 
 ### 🔹 2. Rendered CoT → Visual Latent Reasoning
@@ -132,6 +133,7 @@ Applying latent reasoning to multimodal retrieval and embedding tasks.
 | SwimBird | Adaptive | Multi-mode | 3-mode SFT | Qwen2.5-VL | HR-Bench 79.0 |
 | HIVE | Adaptive | Multi-modal | Loop Transformer SFT | Huginn 3.5B | ScienceQA 91.6% |
 | HLPR | Decoupled | Hybrid CoT + Vision | Policy optimization | — |
+| OneVL | One-step | None | 1-stage | — | — |
 | ImgCoT | **8** | Rendered CoT | TiTok + LLM SFT | Qwen2.5 | ≈ Full-CoT |
 | ReGuLaR | ~3 steps | Rendered CoT | VAE (ELBO + KL) | LLaMA 3.2 | Avg 45.6% |
 | OneLatent | **1** | Rendered CoT | 3-stage curriculum | DeepSeek-OCR | 11× compress, -2.21% |
