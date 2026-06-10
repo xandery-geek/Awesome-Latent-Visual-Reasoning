@@ -6,7 +6,7 @@
 
 A curated collection of papers on **Latent Visual Reasoning** — enabling Multimodal Large Language Models (MLLMs) to reason in continuous latent/visual space rather than discrete text token space.
 
-**Last updated:** April 2026 | **Papers:** 24
+**Last updated:** June 2026 | **Papers:** 43
 
 </div>
 
@@ -43,8 +43,10 @@ Papers that enable MLLMs to generate or manipulate visual embeddings/latents dur
 | 2026-02 | [Vision-aligned Latent Reasoning](https://arxiv.org/abs/2602.04476) | VaLR | — | Dynamic vision-aligned latents per CoT step with REPA |
 | 2026-02 | [SwimBird: Switchable Reasoning Mode](https://arxiv.org/abs/2602.06040) | SwimBird | — | Adaptive mode switching: text / visual / interleaved |
 | 2026-02 | [HIVE: Multimodal Latent Reasoning via Hierarchical Visual Cues](https://arxiv.org/abs/2602.05359) | HIVE | — | Loop Transformer with coarse-to-fine hierarchical visual injection |
-| 2026-04 | [OneVL: One-Step Latent Reasoning and Planning with Vision-Language Explanation](https://arxiv.org/abs/2604.22096) | OneVL | — | One-step latent reasoning with VL explanation for VLA |
-| 2026-04 | [Hybrid Latent Reasoning with Decoupled Policy Optimization](https://arxiv.org/abs/2604.22096) | HLPR | — | Hybrid CoT with adaptive policy optimization for MLLMs |
+| 2026-04 | [OneVL: One-Step Latent Reasoning and Planning with Vision-Language Explanation](https://arxiv.org/abs/2604.18486) | OneVL | — | One-step latent reasoning with dual language/world-model supervision for VLA |
+| 2026-04 | [Hybrid Latent Reasoning with Decoupled Policy Optimization](https://arxiv.org/abs/2604.20328) | HyLaR | — | Hybrid text + visual latent reasoning optimized with DePO |
+| 2026-05 | [Visual Latents Know More Than They Say: Unsilencing Latent Reasoning in MLLMs](https://arxiv.org/abs/2605.02735) | Unsilencing | — | Inference-time latent optimization with contrastive alignment and confidence reward |
+| 2026-05 | [Semantic-Enriched Latent Visual Reasoning](https://arxiv.org/abs/2605.19342) | SLVR | — | Attribute-supervised region latents aligned via multi-query GRPO |
 
 ### 🔹 2. Rendered CoT → Visual Latent Reasoning
 
@@ -73,7 +75,11 @@ Papers applying latent reasoning to specific domains.
 | Date | Paper | Abbreviation | Venue | Domain | Key Idea |
 |------|-------|:---:|:---:|:---:|----------|
 | 2025-06 | [MINT-CoT: Mathematical Interleaved Tokens](https://arxiv.org/abs/2506.05331) | MINT-CoT | NeurIPS 2025 | Math | Interleave fine-grained visual tokens for mathematical reasoning |
+| 2026-02 | [Latent Reasoning VLA: Latent Thinking and Prediction for Vision-Language-Action Models](https://arxiv.org/abs/2602.01166) | LaRA-VLA | ICML 2026 | Robotics / VLA | Internalize multimodal CoT into continuous latents for embodied action |
 | 2026-03 | [LatentGeo: Learnable Auxiliary Constructions](https://arxiv.org/abs/2603.12166) | LatentGeo | — | Geometry | Latent auxiliary line construction for geometric reasoning |
+| 2026-04 | [MedLVR: Latent Visual Reasoning for Reliable Medical Visual Question Answering](https://arxiv.org/abs/2604.09757) | MedLVR | — | Medical VQA | Interleave latent visual evidence states with ROI supervision and VLPO |
+| 2026-05 | [VITAL: Visual-Semantic Dual Supervision for Enhanced and Interpretable Latent Reasoning in Medical MLLMs](https://arxiv.org/abs/2605.28422) | VITAL | — | Medical VQA | Dual text reconstruction + ROI feature regression for interpretable latent reasoning |
+| 2026-06 | [Continuous Reasoning for Vision-Language-Action](https://arxiv.org/abs/2606.00229) | Continuous Reasoning | — | Robotics / VLA | Shared Gaussian latent thoughts trained by self-verification for action generation |
 
 ### 🔹 5. Related: Latent Reasoning for LLMs (Text-only)
 
@@ -99,20 +105,17 @@ Works that critically examine whether latent tokens genuinely contribute to reas
 |------|-------|:---:|:---:|----------|
 | 2026-02 | [Imagination Helps, But Not Yet in Latent Space](https://arxiv.org/abs/2602.22766) | CapImagine | — | Causal mediation analysis reveals latent tokens may be "placeholders" |
 | 2026-02 | [CrystaL: Spontaneous Emergence of Visual Latents](https://arxiv.org/abs/2602.20980) | CrystaL | — | Dual-path alignment for crystallizing visual latents |
+| 2026-05 | [What's Holding Back Latent Visual Reasoning?](https://arxiv.org/abs/2605.18445) | — | — | Dummy-token and oracle-token analysis identifies weak intermediate supervision and latent collapse |
+| 2026-06 | [Beyond Visual Memory: Mechanistic Diagnostics of Latent Visual Reasoning](https://arxiv.org/abs/2606.01287) | — | — | Decomposes latent slots, boundary markers, and format to test causal mechanisms |
 
 ### 🔹 7. Latent Reasoning for Retrieval & Embedding
 
-Applying latent reasoning to multimodal retrieval and embedding tasks.
+Applying latent reasoning or latent-space generation to retrieval, universal embeddings, and document representation.
 
-| Date | Paper | Abbreviation | Venue | Key Idea |
-|------|-------|:---:|:---:|----------|
-| 2026-04 | [PLUME: Latent Reasoning Based Universal Multimodal Embedding](https://arxiv.org/abs/2604.02073) | PLUME | — | Implicit CoT reasoning before extracting universal multimodal embeddings for retrieval |
-
-### 🔹 8. Related: Latent Space for Document Embedding
-
-| Date | Paper | Abbreviation | Venue | Key Idea |
-|------|-------|:---:|:---:|----------|
-| 2026-01 | [CausalEmbed: Multi-Vector Generation in Latent Space](https://arxiv.org/abs/2601.21262) | CausalEmbed | — | Auto-regressive latent generation for document retrieval (30–155× compression) |
+| Date | Paper | Abbreviation | Venue | Task | Key Idea |
+|------|-------|:---:|:---:|:---:|----------|
+| 2026-01 | [CausalEmbed: Multi-Vector Generation in Latent Space](https://arxiv.org/abs/2601.21262) | CausalEmbed | — | Document Retrieval | Auto-regressive latent generation for document retrieval (30–155× compression) |
+| 2026-04 | [PLUME: Latent Reasoning Based Universal Multimodal Embedding](https://arxiv.org/abs/2604.02073) | PLUME | — | Multimodal Retrieval | Implicit CoT reasoning before extracting universal multimodal embeddings |
 
 ---
 
@@ -132,8 +135,14 @@ Applying latent reasoning to multimodal retrieval and embedding tasks.
 | VaLR | K/step | Visual encoders | Curriculum + REPA | Qwen2.5-VL | VSI +19.9% |
 | SwimBird | Adaptive | Multi-mode | 3-mode SFT | Qwen2.5-VL | HR-Bench 79.0 |
 | HIVE | Adaptive | Multi-modal | Loop Transformer SFT | Huginn 3.5B | ScienceQA 91.6% |
-| HLPR | Decoupled | Hybrid CoT + Vision | Policy optimization | — |
-| OneVL | One-step | None | 1-stage | — | — |
+| OneVL | One-step | Language + world-model | 3-stage alignment | VLA / World Model | Explicit-CoT accuracy at answer-only latency |
+| HyLaR | Hybrid | Text + visual latents | SFT + DePO | — | Fine-grained perception ↑ |
+| Unsilencing | Variable | Query-guided latent alignment | Inference-time optimization | MLLMs | Unblocks suppressed visual latents |
+| SLVR | Region-centric | Attribute + multi-query QA | 2-stage + M-GRPO | — | Semantic consistency ↑ |
+| LaRA-VLA | Latent | Textual + visual CoT | Curriculum learning | VLA | Up to 90% latency reduction |
+| MedLVR | Short segment | ROI evidence | ROI-SFT + VLPO | Qwen2.5-VL | Medical VQA avg 48.3→53.4 |
+| VITAL | Latent | Text + ROI features | Dual supervision | Medical MLLM | SOTA on 7 medical VQA benchmarks |
+| Continuous Reasoning | Structured Gaussian | Action verification | EMA self-verification | VLA | Real-robot success ↑ |
 | ImgCoT | **8** | Rendered CoT | TiTok + LLM SFT | Qwen2.5 | ≈ Full-CoT |
 | ReGuLaR | ~3 steps | Rendered CoT | VAE (ELBO + KL) | LLaMA 3.2 | Avg 45.6% |
 | OneLatent | **1** | Rendered CoT | 3-stage curriculum | DeepSeek-OCR | 11× compress, -2.21% |
@@ -147,9 +156,9 @@ Applying latent reasoning to multimodal retrieval and embedding tasks.
 3. **Hybrid Auto-regressive Generation & Decoupled Optimization** — Unified discrete text + continuous latent prediction with adaptive policies
 4. **Multi-stage Training** — Progressive SFT + RL is the standard recipe
 5. **Adaptive Mode Switching** — Models learn to choose text/visual/mixed reasoning per query
-6. **Causal Scrutiny** — CapImagine challenges whether latent tokens truly contribute
+6. **Causal & Mechanistic Scrutiny** — CapImagine, What's Holding Back, and Beyond Visual Memory test whether latent slots causally contribute or act as format/boundary markers
 7. **From Multi-token to Single-token** — Extreme compression (OneLatent: 1 token) with minimal accuracy loss
-8. **Domain Specialization** — Geometry, math, and document-specific latent reasoning
+8. **Domain Specialization** — Geometry, math, medical VQA, robotics/VLA, and retrieval-specific latent reasoning
 
 ---
 

@@ -1,4 +1,4 @@
-node_modules/
+.vscode/
+.codex/
+.idea/
 .DS_Store
-*.pdf
-*.zip
