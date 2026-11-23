@@ -6,7 +6,7 @@
 
 A curated collection of papers on **Latent Visual Reasoning** — enabling Multimodal Large Language Models (MLLMs) to reason in continuous latent/visual space rather than discrete text token space.
 
-**Last updated:** October 2026 | **Papers:** 75
+**Last updated:** November 2026 | **Papers:** 88
 
 </div>
 
@@ -32,8 +32,8 @@ Papers that enable MLLMs to use hidden visual states or internalized visual oper
 | Date | Paper | Abbreviation | Venue | Key Idea |
 |------|-------|:---:|:---:|----------|
 | 2025-01 | [Efficient Reasoning with Hidden Thinking](https://arxiv.org/abs/2501.19201) | Heima | ICML 2026 | Encode each CoT step into a single thinking token; token count reduced to 6% |
-| 2025-09 | [Multimodal Chain of Continuous Thought](https://arxiv.org/abs/2508.12587) | MCOUT | NeurIPS 2025 Workshop | Iterative continuous latent thought with multimodal attention for VLMs |
-| 2025-10 | [Latent Visual Reasoning](https://arxiv.org/abs/2509.24251) | LVR | ICLR 2026 | Auto-regressive visual token reconstruction interleaved with text generation |
+| 2025-08 | [Multimodal Chain of Continuous Thought for Latent-Space Reasoning in Vision-Language Models](https://arxiv.org/abs/2508.12587) | MCOUT | NeurIPS 2025 Workshop | Iterative continuous latent thought with multimodal attention for VLMs |
+| 2025-09 | [Latent Visual Reasoning](https://arxiv.org/abs/2509.24251) | LVR | ICLR 2026 | Auto-regressive visual token reconstruction interleaved with text generation |
 | 2025-10 | [Reasoning in the Dark: Interleaved Vision-Text Reasoning in Latent Space](https://arxiv.org/abs/2510.12603) | IVT-LR | — | Unified latent text + latent vision tokens per reasoning step |
 | 2025-10 | [Latent Chain-of-Thought for Visual Reasoning](https://arxiv.org/abs/2510.23925) | LaCoT | NeurIPS 2025 | Bayesian formulation via amortized variational inference and GFlowNet |
 | 2025-11 | [Chain-of-Visual-Thought](https://arxiv.org/abs/2511.19418) | CoVT | — | ~20 continuous visual tokens distilled from segmentation, depth, edge experts |
@@ -59,9 +59,16 @@ Papers that enable MLLMs to use hidden visual states or internalized visual oper
 | 2026-05 | [DeepLatent: Think with Images via Parallel Latent Visual Reasoning](https://arxiv.org/abs/2606.00562) | DeepLatent | — | Parallel 2D visual latents anchored to source image features with continuous-space RL |
 | 2026-08 | [LUT: Latent Utility Training for Visual Reasoning](https://arxiv.org/abs/2608.00743) | LUT | — | VQA-only training selects useful latent trajectories and rewards answer-relevant steps |
 | 2026-08 | [Scaffolding Minds: Optimizing Latent Visual Target Representations for Multimodal Reasoning](https://arxiv.org/abs/2608.19669) | Scaffolding Minds | — | Learned scaffolding encoder and stochastic latent policy improve visual reasoning |
-| 2026-10 | [Latent Reasoning in Continuous Space for Unified Multimodal Models](https://rootyjeon.github.io/latent-reasoning-umm/assets/larc.pdf) | LARC | NeurIPS 2026 | Interleave text and continuous hidden-state steps; information-gain RL improves visual generation and reasoning |
+| 2026-09 | [Uni-LaDiR: Latent Diffusion Unifies Multimodal Reasoning](https://arxiv.org/abs/2609.19878) | Uni-LaDiR | — | Jointly learn a shared encoder for multimodal teacher steps and a diffusion reasoner that predicts latent thought blocks |
+| 2026-09 | [Rethinking Latent Visual Reasoning: Grounding Latent Reasoning in Visual Evidence](https://arxiv.org/abs/2609.34563) | ReaLVR | — | Contrast answers and visual evidence to supervise the model's own latent trajectories |
+| 2026-10 | [SLVR: Structured Latent Visual Reasoning via Human-like Reasoning Flows](https://arxiv.org/abs/2610.10563) | SLVR (Structured) | NeurIPS 2026 | Supervise typed latent stages for planning, grounding, evidence selection, and integration |
+| 2026-10 | [Look Before You Reason: Implicit Visual Thinking for Efficient Multimodal Reasoning](https://arxiv.org/abs/2610.27341) | LoRe | NeurIPS 2026 | Predict a relevant region and amplify its value-cache entries within the same decoding request |
+| 2026-10 | [Oddin: Latent Visual Reasoning in Unified Multimodal Models via Self-Distillation from Image Generation](https://arxiv.org/abs/2610.33062) | Oddin | — | Self-distill intermediate image generation into compact latents; decode only the final image |
+| 2026-10 | [Latent Visual Contrastive Reasoning with Multi-Branch Exploration](https://arxiv.org/abs/2610.36809) | LVCR | IEEE BigData 2026 | Contrast multiple question-conditioned latent branches against bounding-box evidence, then rank them before decoding |
+| 2026-10 | [Latent Reasoning in Continuous Space for Unified Multimodal Models](https://arxiv.org/abs/2610.42149) | LARC | NeurIPS 2026 | Interleave text and continuous hidden-state steps; information-gain RL improves visual generation and reasoning |
+| 2026-11 | [Efficient Latent Reasoning for Vision-Language Model via Dynamics-Aware Quantization and Distillation](https://arxiv.org/abs/2611.25670) | QL-VLM | — | Preserve rotary-key structure and distill latent dynamics for 4-bit continuous-thought reasoning |
 
-For LARC, the date is the catalogue verification month; its [project page](https://rootyjeon.github.io/latent-reasoning-umm/) has no public arXiv submission date yet.
+SLVR (Structured) is distinct from *Semantic-Enriched Latent Visual Reasoning* (ICML 2026), which also uses the abbreviation SLVR.
 
 ### 🔹 2. Rendered CoT → Visual Latent Reasoning
 
@@ -106,6 +113,10 @@ Papers applying latent reasoning to specific domains.
 | 2026-06 | [Think Less, Act Early: Reinforced Latent Reasoning with Early Exit in Vision-Language-Action Models](https://arxiv.org/abs/2606.15099) | AVA-VLA | ICML 2026 | Robotics / VLA | Denoise latent reasoning trajectories with RL and exit by state confidence |
 | 2026-06 | [Latent Visual Diffusion Reasoning with Monte Carlo Tree Search](https://arxiv.org/abs/2606.27988) | LVDR | ECCV 2026 | Skill Assessment | Keypoint-guided MCTS reveals latent reasoning paths in sports and surgery videos |
 | 2026-07 | [LEEVLA: Seeing What Matters in Latent Environment Evolution for Vision-Language-Action](https://arxiv.org/abs/2607.08182) | LEEVLA | — | Robotics / VLA | Prioritize task-relevant regions and predict structured latent feature evolution |
+| 2026-09 | [Skip the Talk, Re-Focus on Vision: Latent Reasoning for Reasoning Segmentation in Multimodal Large Language Models](https://arxiv.org/abs/2609.30783) | LIRSeg | — | Reasoning Segmentation | Ground compact latent tokens through spatial alignment, then optimize with segmentation rewards and diversity regularization |
+| 2026-09 | [Latent Multimodal Memory Reasoning](https://arxiv.org/abs/2610.23890) | LMMR | — | Multimodal Agent Memory | Build a shared sparse concept graph from text and image features; inject graph readouts as continuous residual rollouts |
+| 2026-10 | [Think Densely, Act Sparsely: Latent Expert Cognitive Chains for Vision-Language-Action Autonomous Driving](https://arxiv.org/abs/2610.25734) | LECDrive | NeurIPS 2026 | Autonomous Driving | Progressively distill visual, semantic, and geometric experts into a compact latent cognitive chain |
+| 2026-10 | [Physical Words: A Vocabulary for Structuring Latent Reasoning in Robot Manipulation](https://arxiv.org/abs/2610.26854) | PhysWord | — | Robotics / VLA | Align action-word hidden states with future visual and tactile features to structure reasoning before acting |
 
 ### 🔹 5. Related: Latent Reasoning for LLMs (Text-only)
 
@@ -137,6 +148,7 @@ Works that critically examine whether latent tokens genuinely contribute to reas
 | 2026-05 | [Leveraging Latent Visual Reasoning in Silence](https://arxiv.org/abs/2605.18641) | — | NeurIPS 2026 | Noise/removal tests and attention rewards probe whether latent tokens guide learning |
 | 2026-06 | [Beyond Visual Memory: Mechanistic Diagnostics of Latent Visual Reasoning](https://arxiv.org/abs/2606.01287) | — | — | Decomposes latent slots, boundary markers, and format to test causal mechanisms |
 | 2026-09 | [Reason Through the Latent! Making Latent Visual Reasoning Necessary](https://arxiv.org/abs/2609.06746) | CVRR | — | Remove visual cache before decoding so answers must depend on recurrent latent states |
+| 2026-11 | [Mental Imagery That Matters: Curing Latent Collapse in Multimodal Reasoning](https://arxiv.org/abs/2611.10423) | AnchorSim | NeurIPS 2026 | Perturbations diagnose mental simulation collapse; contrastive distillation makes visual latents affect predictions |
 
 ### 🔹 7. Latent Reasoning for Retrieval & Embedding
 
@@ -150,16 +162,14 @@ Applying latent reasoning or latent-space generation to retrieval, universal emb
 | 2026-05 | [LatentRAG: Latent Reasoning and Retrieval for Efficient Agentic RAG](https://arxiv.org/abs/2605.06285) | LatentRAG | NeurIPS 2026 | Text RAG | Single-pass latent thoughts and subqueries align with dense retriever embeddings |
 | 2026-08 | [Retrieval Grounding Latent Reasoning for Dense Retrieval](https://arxiv.org/abs/2608.14107) | RGLT | — | Text Retrieval | Credit intermediate silent-token transitions for retrieval improvements |
 | 2026-09 | [Latent-Aligned Reasoning for Multimodal Recommendation](https://arxiv.org/abs/2609.04645) | LARK | — | Multimodal Recommendation | Align visual checkpoint latents and contrastive item embeddings with CoT states |
+| 2026-09 | [VaME: Exploring Variational Latent Reasoning for Multimodal Embeddings](https://arxiv.org/abs/2609.33402) | VaME | — | Multimodal Retrieval | Explore stochastic latent trajectories with answer reconstruction and semantic decoding rewards before embedding extraction |
 
 ### NeurIPS 2026 titles awaiting public paper details
 
 The [official NeurIPS 2026 list](https://neurips.cc/Downloads/2026) also includes the following closely related titles. They are listed here without method summaries or dated taxonomy rows until a public paper or abstract can be verified. The paper count above covers the dated taxonomy rows only:
 
 - [GeLVR: Geometry-Consistent Latent Visual Reasoning in Multimodal LLMs](https://neurips.cc/virtual/2026/poster/150448)
-- [SLVR: Structured Latent Visual Reasoning via Human-like Reasoning Flows](https://neurips.cc/virtual/2026/poster/154074) — distinct from the ICML 2026 paper *Semantic-Enriched Latent Visual Reasoning* above
-- [Look Before You Reason: Implicit Visual Thinking for Efficient Multimodal Reasoning](https://neurips.cc/virtual/2026/poster/149054)
 - [Latent Spatial Reasoning: Building Innate 3D Awareness via Latent-Space Distillation](https://neurips.cc/virtual/2026/poster/154054)
-- [Think Densely, Act Sparsely: Latent Expert Cognitive Chains for Vision-Language-Action Autonomous Driving](https://neurips.cc/virtual/2026/poster/149058)
 
 ---
 
@@ -186,17 +196,24 @@ The [official NeurIPS 2026 list](https://neurips.cc/Downloads/2026) also include
 | RIS | Variable | Box + region descriptions | Grounded SFT + attention bottleneck | MLLM | Fine-grained perception ↑ |
 | CoLVR | Variable | Perturbed latent contrasts | Contrastive learning + trajectory RL | MLLM | VSP +5.83%, Jigsaw +8.00% |
 | SCOLAR | Long sequence | Visual feature anchoring | 3-stage SFT + ALPO | Vision-language model | >30× longer usable latent CoT |
-| SLVR | Region-centric | Attribute + multi-query QA | 2-stage + M-GRPO | — | Semantic consistency ↑ |
+| SLVR (Semantic-Enriched) | Region-centric | Attribute + multi-query QA | 2-stage + M-GRPO | — | Semantic consistency ↑ |
 | DeepLatent | Parallel 2D | Image features | Distillation + latent-space RL | Vision-language model | Parallel visual reasoning ↑ |
 | LUT | Variable | VQA pairs | Utility distillation + attribution RL | MLLM | Perception-intensive reasoning ↑ |
 | Scaffolding Minds | Variable | Learned visual targets | Scaffolding SFT + stochastic RL | MLLM | +5.2% avg on 9 visual benchmarks |
+| SLVR (Structured) | Typed latent stages | Plans + boxes + evidence + rationales | Stage-specific supervision | Qwen2.5-VL-7B | MMVP +9.4 pp; BLINK Relation +14.2 pp |
+| LoRe | Region + answer tokens | Answer + grounding rewards | GRPO + value-cache modulation | Qwen2.5-VL-7B | V* 72.4→82.6% |
+| LVCR | 4 (3B) / 8 (7B) | Bounding-box evidence | SFT + contrastive alignment | Qwen2.5-VL | 3B V* 75.4% |
 | LARC | Variable | CoT curriculum + image information gain | SFT + self-evolving RL | BAGEL | GenEval 0.88 vs 0.81 base |
+| QL-VLM | Continuous thoughts | Full-precision teacher | Dynamics-guided quantization + distillation | Qwen2-VL-2B-Instruct | 4-bit ScienceQA-IMG 90.43%; 6.40× lower latency than explicit CoT |
 | LaRA-VLA | Latent | Textual + visual CoT | Curriculum learning | VLA | Up to 90% latency reduction |
 | MedLVR | Short segment | ROI evidence | ROI-SFT + VLPO | Qwen2.5-VL | Medical VQA avg 48.3→53.4 |
 | VITAL | Latent | Text + ROI features | Dual supervision | Medical MLLM | SOTA on 7 medical VQA benchmarks |
 | Continuous Reasoning | Structured Gaussian | Action verification | EMA self-verification | VLA | Real-robot success ↑ |
 | Future-L1 | Interleaved spans | Future-frame features | SFT + LA-DAPO | Qwen3-VL-8B | FutureBench 61.0→85.4 |
 | AVA-VLA | Adaptive | Task-level reward | RL denoising + early exit | VLA | 6× faster than explicit CoT |
+| LIRSeg | Compact latent tokens | Spatial alignment + segmentation rewards | Two-stage + GRPO | MLLM | ReasonSeg gIoU +4.9 pp; ~16× fewer reasoning tokens vs VisionReasoner |
+| PhysWord | Action-word sequence | Future visual + tactile features | Hidden-state alignment | Robotic foundation model | LIBERO-Long 99.6%; UniVTAC 90.3% success |
+| VaME | Stochastic latent trajectories | Answer reconstruction + semantic decoding reward | Variational latent SFT + RL | Multimodal embedding model | ≥4.25× faster than deterministic latent autoregressive baselines |
 | ImgCoT | **8** | Rendered CoT | TiTok + LLM SFT | Qwen2.5 | ≈ Full-CoT |
 | ReGuLaR | ~3 steps | Rendered CoT | VAE (ELBO + KL) | LLaMA 3.2 | Avg 45.6% |
 | OneLatent | **1** | Rendered CoT | 3-stage curriculum | DeepSeek-OCR | 11× compress, -2.21% |
@@ -212,10 +229,11 @@ The [official NeurIPS 2026 list](https://neurips.cc/Downloads/2026) also include
 3. **Hybrid Auto-regressive Generation & Decoupled Optimization** — Unified discrete text + continuous latent prediction with adaptive policies
 4. **Multi-stage Training** — Progressive SFT + RL is the standard recipe
 5. **Adaptive Mode Switching** — Models learn to choose text/visual/mixed reasoning per query
-6. **Causal & Mechanistic Scrutiny** — CapImagine, Leveraging Latent Visual Reasoning in Silence, Beyond Visual Memory, SCOLAR, and CVRR test information collapse, boundary effects, and whether answers depend on latent states
+6. **Causal & Mechanistic Scrutiny** — CapImagine, Beyond Visual Memory, CVRR, and AnchorSim use interventions to test whether answers depend on latent content; ReaLVR diagnoses weak sensitivity to visual evidence
 7. **From Multi-token to Single-token** — Extreme compression (OneLatent: 1 token) with minimal accuracy loss
-8. **Domain Specialization** — Geometry and 3D grounding, math, medical VQA, industrial anomaly detection, robotics/VLA, video prediction, skill assessment, and retrieval-specific latent reasoning
-9. **Training for Latent Utility** — SCOLAR, LUT, Scaffolding Minds, CoLVR, and LARC optimize information gain, answer relevance, contrastive diversity, or task-specific visual targets
+8. **Domain Specialization** — Geometry and 3D grounding, math, medical VQA, industrial inspection, robotics/VLA, video prediction, skill assessment, reasoning segmentation (LIRSeg), agent memory (LMMR), and multimodal retrieval (VaME)
+9. **Training for Latent Utility and Structure** — ReaLVR and LVCR supervise evidence use; Structured SLVR and LECDrive assign latent stages explicit roles; Uni-LaDiR and VaME model alternative latent trajectories
+10. **Efficiency Beyond Token Compression** — LoRe updates visual evidence in the live cache, Oddin avoids intermediate image decoding, and QL-VLM combines latent reasoning with 4-bit quantization
 
 ---
 
